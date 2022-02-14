@@ -1,0 +1,62 @@
+# rustfmt.toml
+# ============
+#
+# Copying
+# -------
+#
+# Copyright (c) 2022 gitrs authors and contributors.
+#
+# This file is part of the *gitrs* project.
+#
+# gitrs is a free software project. You can redistribute it and/or modify it
+# following the terms of the MIT License.
+#
+# This software project is distributed *as is*, WITHOUT WARRANTY OF ANY KIND;
+# including but not limited to the WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE and NONINFRINGEMENT.
+#
+# You should have received a copy of the MIT License along with *gitrs*. If
+# not, see <http://opensource.org/licenses/MIT>.
+
+# Specifies which edition is used by the parser.
+edition = "2021"
+
+# Minimum number of blank lines which must be put between items.
+blank_lines_lower_bound = 1
+# Maximum number of blank lines which can be put between items.
+blank_lines_upper_bound = 2
+# Brace style for items.
+brace_style = "AlwaysNextLine"
+# Combine control expressions with function calls.
+combine_control_expr = false
+# Replace strings of `_` wildcards by a single `..` in tuple patterns.
+condense_wildcard_suffixes = true
+# Format the metavariable matching patterns in macros.
+format_macro_matchers = true
+# Controls the strategy for how imports are grouped together.
+group_imports = "StdExternalCrate"
+# Put a trailing comma after a block based match arm.
+match_block_trailing_comma = true
+# Maximum width of each line.
+max_width = 80
+# Unix or Windows line endings.
+newline_style = "Unix"
+# Convert `/* */` comments to `//` comments where possible.
+normalize_comments = true
+# Convert `#![doc]` and `#[doc]` attributes to `//!` and `///` doc comments.
+normalize_doc_attributes = true
+# Reorder impl items: `type` and `const` are put first, then macros and methods.
+reorder_impl_items = true
+# Reorder import and extern crate statements alphabetically in groups (a group
+# is separated by a newline).
+reorder_imports = true
+# Reorder `mod` declarations alphabetically in group.
+reorder_modules = true
+# Put small struct literals on a single line.
+struct_lit_single_line = false
+# Use field initialize shorthand if possible.
+use_field_init_shorthand = true
+# Replace uses of the try! macro by the ? shorthand.
+use_try_shorthand = true
+# Break comments to fit on the line.
+wrap_comments = true
